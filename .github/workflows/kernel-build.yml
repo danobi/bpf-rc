@@ -92,7 +92,7 @@ jobs:
           patches-root: '${{ github.workspace }}/ci/diffs'
           repo-root: ${{ env.REPO_ROOT }}
       - name: Setup build environment
-        uses: libbpf/ci/setup-build-env@v1
+        uses: danobi/libbpf-ci/setup-build-env@e36d42f008bdf2ba9f8c893d8b715a0e2c54ad09
         with:
           arch: ${{ inputs.arch }}
           llvm-version: ${{ inputs.llvm-version }}
